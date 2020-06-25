@@ -387,6 +387,10 @@ textarea {
   margin-bottom: 50px;
 }
 
+.container__item {
+  position: relative;
+}
+
 .container__title-second {
   font-weight: 700;
   font-size: 14px;
@@ -396,6 +400,13 @@ textarea {
   text-transform: uppercase;
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
+  padding-bottom: 27px;
+  padding-top: 27px;
+  margin: 0px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .container__items {
@@ -468,19 +479,6 @@ textarea {
   color: var(--title-text-color);
   margin-bottom: 10px;
   text-align: center;
-}
-
-.container__title-second {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: var(--primary-white-color);
-  padding-bottom: 27px;
-  padding-top: 27px;
-  background: rgba(47, 48, 58, 0.8);
-  border-radius: 0px 0px 4px 4px;
-  margin: 0px;
 }
 
 .socialmedia {
