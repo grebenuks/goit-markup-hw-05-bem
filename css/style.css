@@ -581,6 +581,14 @@ footer {
   flex-direction: column;
 }
 
+.footer__item.sudscribe {
+  margin-left: auto;
+}
+
+.footer__item.address {
+  margin-right: 69px;
+}
+
 .logo-footer {
   display: block;
   margin-bottom: 20px;
