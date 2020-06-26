@@ -461,7 +461,6 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
   color: var(--primary-text-color);
 }
 
@@ -590,7 +589,6 @@ footer {
 }
 
 .logo-footer {
-  display: block;
   margin-bottom: 20px;
 }
 
