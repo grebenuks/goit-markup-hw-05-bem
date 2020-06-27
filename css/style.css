@@ -381,7 +381,7 @@ button {
   margin-bottom: 10px;
 }
 
-.container__title-main {
+.container__title--main {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -395,7 +395,7 @@ button {
   position: relative;
 }
 
-.container__title-second {
+.container__title--second {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -416,6 +416,7 @@ button {
 .container__items {
   display: flex;
   align-items: center;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -526,7 +527,7 @@ button {
   background-color: var(--secondary-background-color);
 }
 
-.container__items-company {
+.container__items--second {
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -760,6 +761,7 @@ button {
   margin: 15px 15px;
 }
 
+/* Статическая верстка */
 /* .projects-list__item:nth-child(3n) {
   margin-right: 0;
 } */
@@ -768,44 +770,49 @@ button {
   padding: 20px 24px;
   background: var(--primary-white-color);
   box-sizing: border-box;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   border-left: 1px solid#eeeeee;
   border-right: 1px solid#eeeeee;
   border-bottom: 1px solid#eeeeee;
 }
 
-/* .projects-list__meta:hover::before {
-  opacity: 1;
-}
+/* 5 дз */
 
-.projects-list__container-img {
+.projects-list__thumb {
   object-fit: cover;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.projects-list__container-img::before {
+.projects-list__thumb::before {
   display: inline-block;
   content: "";
   position: absolute;
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: var(--accent-color);
   opacity: 0;
 }
 
 .projects-list__meta {
   position: absolute;
-  margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+  max-width: 322px;
   color: var(--primary-white-color);
-  top: 63px;
-  left: 24px;
-  bottom: 63px;
-  right: 24px;
-  display: flex;
   opacity: 0;
-} */
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-list__link:hover .projects-list__meta,
+.projects-list__link:hover .projects-list__thumb::before {
+  opacity: 0.9;
+}
+
+.projects-list__link:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
