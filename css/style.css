@@ -255,11 +255,6 @@ button {
   position: relative;
 }
 
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--accent-color);
-}
-
 .logo {
   display: block;
 }
@@ -282,9 +277,12 @@ button {
   padding: 7px 15px;
 }
 
+.nav__link:hover,
+.nav__link:focus,
 .list__link:hover,
 .list__link:focus {
   color: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__link.is--current::after {
@@ -537,6 +535,7 @@ button {
 .socialmedia__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socialmedia__icon {
@@ -565,6 +564,7 @@ button {
 .container__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* футер */
@@ -707,6 +707,7 @@ button:focus,
   background-color: var(--accent-color);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button {
@@ -814,15 +815,16 @@ button {
   max-width: 322px;
   color: var(--primary-white-color);
   opacity: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list__link:hover .projects-list__meta,
 .projects-list__link:hover .projects-list__thumb::before {
   opacity: 0.9;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list__link:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
