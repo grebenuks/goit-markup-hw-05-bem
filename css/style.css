@@ -810,7 +810,6 @@ button {
 
 .projects-list__meta {
   position: absolute;
-  display: block;
   font-weight: 300;
   font-size: 18px;
   line-height: 1.56;
